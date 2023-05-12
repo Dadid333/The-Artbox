@@ -10,31 +10,24 @@
 </head>
 <body>
 <header>
-    <a href="index.html"><img src="img/logo.png" alt="Logo Artbox" id="logo"></a>
-    <nav>
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-        </ul>
-    </nav>
+    <?php include_once('header.php'); ?>
 </header>
 <main>
     <article id="detail-oeuvre">
         <div id="img-oeuvre">
-            <img src="img/pawel-czerwinski.png" alt="Chromatics">
+            <img src="img/orfeas-green.png" alt="Puffy Amalgamate">
         </div>
         <div id="contenu-oeuvre">
-            <h1>Chromatics</h1>
-            <p class="description">Jean-Michel Delatronchette</p>
+            <h1>Puffy Amalgamate</h1>
+            <p class="description">Sandro De Blasi</p>
             <p class="description-complete">
-                Vivamus commodo non libero at hendrerit. In lacinia dui sit amet pellentesque iaculis. Donec at ultricies sem porttitor.
+                Donec semper a massa quis congue. In malesuada lorem ligula, ut posuere magna pulvinar in. Proin vitae enim gravida, commodo odio.
             </p>
         </div>
     </article>
 </main>
 <footer>
-    <p>
-        <strong>© THE ARTBOX</strong> - <em>Tous droits réservés</em>
-    </p>
+    <?php include_once('footer.php'); ?>
 </footer>
 </body>
 </html>
