@@ -18,7 +18,7 @@
     <div id="liste-oeuvres">
         <?php include_once('oeuvres.php'); ?>
             <?php foreach($works as $work) : ?>
-                <?php if (array_key_exists('id', $work)): ?>                   
+                <?php if ($work['is_enabled'] == true) : ?>
                     <article class="oeuvre">
                         <a href="oeuvre.php?id=<?php echo $work['id']; ?>">
                             <img src="<?php echo $work['image']; ?>" alt="<?php echo $work['title']; ?>">
