@@ -15,7 +15,7 @@
 <main>
 <?php include_once('oeuvres.php'); ?>
     <?php foreach($works as $work) : ?>
-        <?php if (array_key_exists('is_enabled', $work) && $work['id'] == $_GET['id']): ?>
+        <?php if ($work['is_enabled'] == true && $work['id'] == $_GET['id']): ?>
             <article id="detail-oeuvre">
                 <div id="img-oeuvre">
                     <img src="<?php echo $work['image']; ?>" alt="<?php echo $work['title']; ?>">
