@@ -15,10 +15,10 @@
     <main>
     <div id="liste-oeuvres">
         <?php include_once('oeuvres.php'); ?>
-            <?php foreach($works as $work) : ?>
-                <?php include('partials/oeuvre_list.php'); ?>
-            <?php endforeach ?>
-        </div>
+        <?php foreach($works as $work) : ?>
+            <?php include('partials/oeuvre_list.php'); ?>
+        <?php endforeach ?>
+    </div>
     </main>
     <?php include_once('partials/footer.php'); ?>
 </body>
