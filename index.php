@@ -11,9 +11,7 @@
     <title>The ArtBox</title>
 </head>
 <body>
-    <header>
-        <?php include_once('header.php'); ?>
-    </header>
+    <?php include_once('partials/header.php'); ?>
     <main>
     <div id="liste-oeuvres">
         <?php include_once('oeuvres.php'); ?>
@@ -30,9 +28,7 @@
             <?php endforeach ?>
         </div>
     </main>
-    <footer>
-        <?php include_once('footer.php'); ?>
-    </footer>
+    <?php include_once('partials/footer.php'); ?>
 </body>
 </php
 >
