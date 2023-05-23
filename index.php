@@ -16,15 +16,7 @@
     <div id="liste-oeuvres">
         <?php include_once('oeuvres.php'); ?>
             <?php foreach($works as $work) : ?>
-                <?php if ($work['is_enabled'] == true) : ?>
-                    <article class="oeuvre">
-                        <a href="oeuvre.php?id=<?php echo $work['id']; ?>">
-                            <img src="<?php echo $work['image']; ?>" alt="<?php echo $work['title']; ?>">
-                            <h2><?php echo $work['title']; ?></h2>
-                            <p class="description"><?php echo $work['author']; ?></p>
-                        </a>
-                    </article>                               
-                <?php endif ?>
+                <?php include('partials/oeuvre_list.php'); ?>
             <?php endforeach ?>
         </div>
     </main>
