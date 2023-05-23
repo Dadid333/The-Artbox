@@ -16,7 +16,7 @@
     <div id="liste-oeuvres">
         <?php include_once('oeuvres.php'); ?>
         <?php foreach($works as $work) : ?>
-            <?php include('partials/oeuvre_list.php'); ?>
+            <?php include('partials/works_list.php'); ?>
         <?php endforeach ?>
     </div>
     </main>

@@ -17,7 +17,7 @@ $works = [
         'author' => 'Anaisha Devi',
         'description' => 'Sur cette oeuvre conceptuelle à la fois organique, minérale et liquide, Anaisha Devi nous transporte dans un nuage noir envoûtant. Un sombre tableau qui, par son verni éclatant, rayonne tel un marbre poli. Une oeuvre à la cohérence transcendantale, exécutée à la perfection
         ', 
-        'is_enabled' => true,
+        'is_enabled' => false,
     ],
     [
         'id' => 3,
@@ -138,5 +138,3 @@ $works = [
         'is_enabled' => true,
     ],
 ];
-
-?>

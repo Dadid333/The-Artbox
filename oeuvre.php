@@ -1,5 +1,5 @@
-<!doctype html>
-<html lang="fr">
+<!doctype php>
+<php lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -11,11 +11,20 @@
 <body>
 <?php include_once('partials/header.php'); ?>
 <main>
-<?php include_once('oeuvres.php'); ?>
-<?php foreach($works as $work) : ?>
-    <?php include_once('partials/oeuvre_detail.php'); ?>
-<?php endforeach ?>
+<?php include_once('oeuvres.php');     
+if (isset($_GET['id']))
+{
+    foreach($works as $work)
+    if (array_key_exists('id', $work) && $work['id'] == $_GET['id'] && $work['is_enabled'])
+    {
+    include('partials/work_details.php');
+    }
+} else {
+    echo "aucune oeuvre à afficher.";
+}
+?>
+    
 </main>
 <?php include_once('partials/footer.php'); ?>
 </body>
-</html>
+</php>
