@@ -11,10 +11,7 @@
 <body>
     <?php include_once('partials/header.php'); ?>
     <main>
-    <?php if (!isset($_GET['id'])) { 
-            include('partials/oeuvre-one-card.php');
-            }
-            ?>       
+        <?php include('partials/work_details.php'); ?>
     </main>
     <?php include_once('partials/footer.php'); ?>
 </body>
