@@ -11,14 +11,7 @@
 <body>
     <?php include_once('partials/header.php'); ?>
     <main>
-        <?php include_once('oeuvres.php');     
-        if (isset($_GET['id']))
-        { 
-            foreach($works as $work)
-            include('partials/work_details.php');
-        } else {
-            echo "aucune oeuvre à afficher.";
-        } ?>
+        <?php include('partials/work_details.php'); ?>
     </main>
     <?php include_once('partials/footer.php'); ?>
 </body>
