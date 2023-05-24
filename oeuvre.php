@@ -13,12 +13,9 @@
     <main>
         <?php include_once('oeuvres.php');     
         if (isset($_GET['id']))
-        {
+        { 
             foreach($works as $work)
-            if (array_key_exists('id', $work) && $work['id'] == $_GET['id'] && $work['is_enabled'])
-            {
             include('partials/work_details.php');
-            }
         } else {
             echo "aucune oeuvre à afficher.";
         } ?>
