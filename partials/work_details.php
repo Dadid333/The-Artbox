@@ -20,4 +20,5 @@ if (isset($_GET['id']))
     } 
 } else {
             echo "aucune oeuvre à afficher.";
-        } ?>
+        } 
+?>
