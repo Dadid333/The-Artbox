@@ -11,12 +11,7 @@
 <body>
     <?php include_once('partials/header.php'); ?>
     <main>
-        <div id="liste-oeuvres">
-            <?php include_once('oeuvres.php'); ?>
-            <?php foreach($works as $work) : ?>
-                <?php include('partials/works_list.php'); ?>
-            <?php endforeach ?>
-        </div>
+        <?php include('partials/works_list.php'); ?>
     </main>
     <?php include_once('partials/footer.php'); ?>
 </body>
