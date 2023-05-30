@@ -1,5 +1,5 @@
-<!doctype php>
-<php lang="fr">
+<!doctype html>
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -10,9 +10,7 @@
 </head>
 <body>
     <?php include_once('partials/header.php'); ?>
-    <main>
-        <?php include('partials/work_details.php'); ?>
-    </main>
+    <?php include('partials/work_details.php'); ?>
     <?php include_once('partials/footer.php'); ?>
 </body>
-</php>
+</html>
